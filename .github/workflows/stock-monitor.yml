@@ -28,7 +28,7 @@ jobs:
 
       - name: Check stock
         env:
-          PRODUCT_URL: ${{ vars.PRODUCT_URL }}
+          PRODUCT_URL: ${{ secrets.PRODUCT_URL }}
           # 이메일
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
